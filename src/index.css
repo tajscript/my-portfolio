@@ -1,0 +1,720 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    @apply
+
+    bg-eerieBlack
+    overflow-x-hidden
+}
+
+.nav-container {
+    @apply
+
+    flex
+    flex-row
+    justify-center
+    w-full
+    items-center
+    px-5
+    h-[4.5rem]
+    text-cadetGray
+    font-mono
+    md:px-10
+    lg:px-20
+}
+
+.logo-container {
+    @apply
+
+    w-1/2
+    flex
+    items-center
+    justify-start
+    mx-auto
+    md:w-1/3
+}
+
+.logo-container > a {
+    @apply
+
+    w-20
+    md:w-24
+    cursor-pointer
+}
+
+.nav-menu {
+    @apply
+
+    w-1/3
+    hidden
+    md:flex
+    justify-center
+    items-center
+}
+
+.nav-menu ul {
+    @apply
+
+    flex
+    flex-row
+    justify-center
+    items-center
+    space-x-10
+}
+
+.nav-menu > ul > li {
+    @apply
+
+    text-lg
+    hover:text-tiffanyBlue
+}
+
+.nav-contact {
+    @apply
+
+    w-1/2
+    mt-2
+    flex
+    justify-end
+    items-center
+    md:w-1/3
+}
+
+.nav-contact-container > button {
+    @apply
+
+    border
+    border-cadetGray
+    w-24
+    rounded-2xl
+    h-9
+    text-sm
+    hover:text-tiffanyBlue
+    hover:border-tiffanyBlue
+    md:text-base
+    md:w-28
+}
+
+/* Home */
+.home-container {
+    @apply
+
+    mt-10
+    px-5
+    w-full
+    h-full
+    flex
+    flex-col-reverse
+    items-center
+    text-cadetGray
+    font-mono
+    md:px-10
+    lg:px-20
+    lg:mt-20
+    lg:flex-row
+    lg:space-x-10
+    xl:mt-28
+} 
+
+.home-text {
+    @apply
+
+    w-full
+    h-full
+    mt-10
+    md:mt-20
+    lg:w-[50%]
+    lg:mt-0
+    md:text-center
+    lg:text-left
+}
+
+.home-text > h2 {
+    @apply
+
+    text-2xl
+    mb-4
+    md:text-3xl
+    lg:text-4xl
+}
+
+.home-text > p {
+    @apply
+
+    text-sm
+    w-full
+    md:text-base
+}
+
+.home-art {
+    @apply
+
+    relative
+    w-full
+    h-[55vmin]
+    flex
+    items-center
+    justify-center
+    sm:h-[50vmin]
+    lg:w-1/2
+    lg:h-[50vmin]
+    xl:h-[45vmin]
+}
+
+.canvas {
+    @apply
+
+    block
+    w-full
+    h-full
+    relative
+    overflow-hidden
+}
+
+.art-background {
+    @apply
+
+    w-full
+    h-[40%]
+    absolute
+    top-[60%]
+    left-0
+    md:flex
+}
+
+.art {
+    @apply
+
+    absolute
+    h-full
+    w-full
+    z-10
+    top-0
+    left-0
+    text-tiffanyBlue
+}
+
+.arm {
+    @apply
+
+    bg-stripe
+}
+
+.neck {
+    @apply
+
+    lg:bg-stripe
+    lg:h-[70px]
+}
+
+.pupil-white {
+    @apply
+
+    sm:left-[5px]
+    sm:top-[6px]
+}
+
+.face {
+    @apply
+
+    sm:w-[156px]
+    sm:h-[200px]
+}
+
+.ear {
+    @apply
+
+    sm:w-[27px]
+    sm:h-[60px]
+    sm:top-[40%]
+    sm:-left-[15%]
+}
+
+.ear::before {
+    @apply
+
+    sm:w-[15px]
+    sm:h-[15px]
+    sm:top-[70%]
+    sm:left-[22%]
+}
+
+.ear + .ear {
+    @apply
+
+    sm:-right-[15%]
+}
+
+.eye {
+    @apply
+
+    sm:w-[22%]
+    sm:h-[25%]
+    sm:left-[15%]
+}
+
+.pupil {
+    @apply
+
+    sm:w-[30px]
+    sm:h-[30px]
+    sm:top-[40%]
+    sm:left-[15%]
+}
+
+.neck {
+    @apply
+
+    sm:top-[200px]
+    sm:w-[70px]
+    sm:h-[65px]
+}
+
+.arm {
+    @apply
+
+    sm:w-[300px]
+    sm:h-[100px]
+    sm:top-[244px]
+}
+
+/* Scroll section */
+.scroll {
+    @apply
+
+    mt-10
+    px-5
+    w-full
+    h-full
+    font-mono
+    text-center
+    flex
+    flex-col
+    items-center
+    justify-center
+    text-sm
+    text-tiffanyBlue
+    md:px-10
+    lg:px-20
+    lg:mt-16
+    lg:text-base
+    lg:items-start
+}
+
+.scroll-container {
+    @apply
+
+    flex
+    flex-col
+    items-center
+    justify-center
+}
+
+
+.scroll-line {
+    @apply
+
+    w-[2px]
+    h-20
+    md:h-28
+    lg:h-36
+    bg-stripe
+}
+
+/* About */
+.about-container {
+    @apply
+
+    block
+    w-full
+    text-cadetGray
+    py-10
+    px-5
+    font-mono
+    overflow-hidden
+    md:px-10
+    md:py-16
+    lg:px-20
+}
+
+.about-animation {
+    @apply
+
+    relative
+    mb-10
+    overflow-hidden
+    lg:mb-20
+}
+
+.about-inner {
+    @apply
+
+    flex
+    flex-auto
+    flex-row
+    items-center
+    space-x-6
+    hover:text-tiffanyBlue
+    lg:space-x-10
+}
+
+.about-text {
+    @apply
+
+    flex-shrink-0
+    text-3xl
+    font-semibold
+    lg:text-5xl
+}
+
+.about-content {
+    @apply
+
+    w-full
+    flex
+    flex-col
+    items-center
+    lg:flex-row
+    lg:space-x-6
+    xl:mt-32
+    overflow-hidden
+}
+
+.about-me {
+    @apply
+
+    w-full
+    text-left
+    border-2
+    border-cadetGray
+    rounded-2xl
+    border-x-0
+    p-2
+    lg:w-[55%]
+}
+
+.about-me > h2 {
+    @apply
+
+    lg:text-lg
+}
+
+.about-stacks {
+    @apply
+
+    mt-10
+    w-full
+    block
+    md:w-[70%]
+    lg:w-[45%]
+    lg:mt-0
+}
+
+.about-stacks > h4 {
+    @apply
+
+    text-center
+    text-base
+    mb-5
+    lg:text-[20px]
+}
+
+.stack-container {
+    @apply
+
+    flex
+    w-full
+    items-center
+    justify-center
+    flex-col
+    space-y-6
+}
+
+.stacks {
+    @apply
+
+    flex
+    w-full
+    items-center
+    justify-center
+    flex-row
+    space-x-6
+    xl:w-[70%]
+}
+
+.stack {
+    @apply
+
+    w-[75%]
+    h-24
+    border
+    cursor-pointer
+    border-cadetGray
+    flex
+    flex-col
+    space-y-2
+    items-center
+    justify-center
+    md:h-28
+    hover:text-tiffanyBlue
+    hover:border-tiffanyBlue
+}
+
+.stack i {
+    @apply
+
+    text-4xl
+}
+
+.stack h5 {
+    @apply
+
+    text-sm
+}
+
+.about-me-color {
+    @apply
+
+    text-tiffanyBlue
+}
+
+/* Work */
+.work-container {
+    @apply
+
+    block
+    w-full
+    text-cadetGray
+    py-16
+    px-5
+    font-mono
+    overflow-hidden
+    md:px-10
+    xl:mb-20
+    lg:px-20
+    lg:pt-20
+}
+
+.work-animation {
+    @apply
+
+    relative
+    mb-10
+    overflow-hidden
+    lg:mb-20
+}
+
+.work-inner {
+    @apply
+
+    flex
+    flex-auto
+    flex-row
+    items-center
+    space-x-6
+    hover:text-tiffanyBlue
+    lg:space-x-10
+}
+
+.work-text {
+    @apply
+
+    flex-shrink-0
+    text-3xl
+    font-semibold
+    lg:text-5xl
+}
+
+.work-content {
+    @apply
+
+    relative
+    block
+}
+
+.project-container {
+    @apply
+
+    flex
+    w-full
+    h-full
+    flex-col
+}
+
+.project-container > h5 {
+    @apply
+
+    text-center
+    md:text-lg
+}
+
+.project {
+    @apply
+
+    w-full
+    h-full
+    flex
+    flex-row
+    items-center
+    justify-between
+    p-2
+}
+
+.project-line {
+    @apply
+
+    w-full
+    h-[3px]
+    bg-cadetGray
+    mb-5
+    mt-2
+}
+
+.project-desc {
+    @apply
+
+    w-[70%]
+    my-2
+}
+
+.project-desc > h4 {
+    @apply
+
+    text-2xl
+    font-bold
+    lg:text-3xl
+    hover:text-tiffanyBlue
+}
+
+.project-link {
+    @apply
+
+    flex
+    space-x-4
+    text-xl
+    lg:text-2xl
+}
+
+.description {
+    @apply
+
+    text-sm
+    lg:text-base
+}
+
+/* Contact */
+.contact-container {
+    @apply
+
+    block
+    w-full
+    relative
+    text-cadetGray
+    px-5
+    pt-24
+    mb-5
+    font-mono
+    overflow-hidden
+    md:px-10
+    lg:px-20
+    lg:pt-32
+}
+
+.contact-container > h2 {
+    @apply
+
+    text-4xl
+    mb-4
+    text-tiffanyBlue
+    font-semibold
+    lg:text-5xl
+    text-center
+}
+
+.contact-container > h3 {
+    @apply
+
+    text-3xl
+    font-semibold
+    text-center
+}
+
+.contact-container > h4 {
+    @apply
+
+    text-center
+    text-sm
+    mt-2
+    w-full
+    mx-auto
+    md:w-[70%]
+    md:text-base
+}
+
+.contact-container > h5 {
+    @apply
+
+    text-center
+    mb-4
+    hover:text-tiffanyBlue
+}
+
+
+.hello {
+    @apply
+
+    w-32
+    text-center
+    py-2
+    mx-auto
+    border-tiffanyBlue
+    text-tiffanyBlue
+    my-16
+    border-2
+    font-semibold
+    hover:border-cadetGray
+    hover:text-cadetGray
+}
+
+.socials {
+    @apply
+
+    flex
+    flex-row
+    w-full
+    items-center
+    justify-center
+    space-x-8
+    mb-32
+}
+
+.social-icon {
+    @apply
+
+    text-4xl
+    hover:text-tiffanyBlue
+}
+
+.footer {
+    @apply
+
+    w-full
+    text-center
+    text-sm
+    lg:text-base
+    lg:text-right
+}
